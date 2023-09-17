@@ -35,7 +35,8 @@ async function getData(){
                             <td> ${result.response[i].name.replace("/INR",'')}</td>
                             <td> ${result.response[i].last}</td>
                             <td>    ₹ ${result.response[i].buy} /  ₹ ${result.response[i].sell}</td>
-                            <td>     ${result.response[i].sell-result.response[i].buy}</td>
+                            <td>     ${(result.response[i].sell-result.response[i].buy)*100}%</td>
+                            <td>     ${(result.response[i].sell-result.response[i].buy)*1000}</td>
 
                         </tr>`
             table.innerHTML += row;

@@ -37,6 +37,12 @@ nav div {
     width: 30%;
 }
 
+#logo{
+    height: 35%;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
 #centre {
     justify-content: center;
     gap:1em;
@@ -216,9 +222,10 @@ body.darkmode {
 @media screen and (max-width: 900px) {
     nav {
       flex-direction: column;
+     
     }
     nav div{
-        width: 90%;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
