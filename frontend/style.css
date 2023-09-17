@@ -52,6 +52,7 @@ nav div {
     border: 2px solid yellow;
 
     justify-content: flex-end;
+    gap: 1em;
 }
 
 #right div {
@@ -61,7 +62,9 @@ nav div {
 .telegram {
     height: 100%;
 }
-
+.connect_telegram{
+    width: 70%;
+}
 .telegram_btn {
     background-color: var(--green);
     height: 100%;
@@ -78,7 +81,14 @@ nav div {
     background: none;
 }
 
-
+.timr{
+    border: 3px solid var(--green);
+    border-radius: 50%;
+    color: var(--green);
+    height: 2em;
+    width: 1.5em;
+    justify-content: center;
+}
 
 #btn {
     background-color: #f8f9fa;
@@ -107,6 +117,13 @@ header {
     /* color: var(--grey); */
     color: gray;
 }
+select{
+    border-radius: 1em;
+}
+#bestPrice h2{
+    color: var(--black);
+
+}
 
 header div {
     width: 20%;
@@ -116,7 +133,8 @@ header div {
 table{
     width: 100%;
 }
-tr{
+
+#mytable tr{
     background-color: #f8f9fa;
 
 }
@@ -172,8 +190,12 @@ body.darkmode {
     background-color: var(--green);
 
 }
-.darkmode tr{
+.darkmode #mytable tr{
     background-color: var(--grey);
+
+}
+.darkmode #bestPrice h2{
+    color: #f8f9fa;
 
 }
 
