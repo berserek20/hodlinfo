@@ -47,9 +47,17 @@ nav div {
     background-color: #f8f9fa;
 
 }
+.buy{
+    border-radius: 1em;
+    background-color: #f8f9fa;
+    height: 100%;
+    color: var(--black);
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
 
 #right {
-    border: 2px solid yellow;
 
     justify-content: flex-end;
     gap: 1em;
@@ -196,6 +204,11 @@ body.darkmode {
 }
 .darkmode #bestPrice h2{
     color: #f8f9fa;
+
+}
+.darkmode .buy{
+    color: #f8f9fa;
+    background-color: var(--grey);
 
 }
 
