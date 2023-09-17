@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLINFO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="getData()">
+    <nav>
+        <div id="logo" class="greenColor">HODLINFO</div>
+        <div id="centre">
+            <select class="currency">
+                <option value="INR">INR</option>
+            </select>
+
+            <select id="sel" class="currency">
+                <!-- <option value="INR">INR</option>
+                <option value="BTC">BTC</option>
+                <option value="XRP">XRP</option> -->
+            </select>
+            <div class="currency">Buy</div>
+        </div>
+        <div id="right">
+            <div class="telegram_btn currency">
+
+                <img class="telegram" src="../frontend/public/TelegramLogo.png" alt="">
+                
+                <button class="telegram">Connect Telegram</button>
+            </div>
+
+            <div id="btn">
+
+                <div id="btn_indicator"></div>
+
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div>
+            <div class="greenColor">0.58%</div>
+            <div class="time">5 Mins</div>
+        </div>
+
+        <div>
+            <div class="greenColor">0.58%</div>
+            <div class="time">1 Hour</div>
+        </div>
+
+        <div id="bestPrice">
+            <p class="time">Best Price To Trade</p>
+            <h2 id="conversion">₹ 24,18,054</h2>
+            <p class="time">Average BTC/INR net price including commission</p>
+        </div>
+
+        <div>
+            <div class="greenColor">0.58%</div>
+            <div class="time">1 Day</div>
+        </div>
+
+        <div>
+            <div class="greenColor">0.58%</div>
+            <div class="time">7 Days</div>
+        </div>
+    </header>
+
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Platform</th>
+            <th>Last Trade Price</th>
+            <th>Buy / Sell Price</th>
+            <th>Differnce</th>
+            <th>Saving</th>
+        </tr>
+
+       
+        <tbody  id="mytable"></tbody>
+
+    </table>
+    <hr>
+    <footer>
+        <p><span>
+            Copyright © 2019
+        </span>
+        <span>
+            HodlInfo.com
+
+        </span>
+            </p>
+            <p class="support"> Support</p>
+    </footer>
+</body>
+<script src="./index.js"></script>
+
+</html>
